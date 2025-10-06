@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Info Page</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        #container {
+            width: 900px;
+            margin: 20px auto;
+        }
+
+        #header {
+            width: 900px;
+            height: 180px;
+        }
+
+        #header img {
+            width: 900px;
+            height: 180px;
+            display: block;
+        }
+
+        #body-content {
+            width: 900px;
+            min-height: 700px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+     
+        #left-content {
+            width: 180px;
+            background-color: #ffffff;
+            padding-top: 30px;
+        }
+
+        #left-content ul {
+            list-style-type: none;
+        }
+
+        #left-content ul li {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #left-content ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #000000;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.2s ease;
+        }
+
+        #left-content ul li a:hover {
+            background-color: #000000;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Center content */
+        #center-content {
+            flex: 1;
+            padding: 30px;
+            background-color: #ffffff;
+            
+        }
+
+        h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #000000;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 25px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        h4 {
+            text-align: left;
+            margin-top: 30px;
+            font-size: 20px;
+            
+        }
+
+        #center-content img {
+            display: block;
+            margin: 15px auto;
+            width: 350px;
+            height: auto;
+           
+        }
+
+        #center-content img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="c:\Users\julie\OneDrive\Documents\MIDTERMLAB3\images\ok.png" alt="Header Image">
+        </div>
+
+        <div id="body-content">
+            <div id="left-content">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="learn more about HTML.html">Learn More</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contactme.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="center-content">
+                <hr><h2>What is HTML?</h2><hr>
+                <p>HTML stands for HyperText Markup Language. It is used to structure content on the web,
+                telling browsers how to display text, images, links, and other media. HTML isn’t a programming language, but a markup language, which means it is used to annotate and format content.</p><br><br>
+                <a href="https://www.hostinger.com/ph/tutorials/what-is-html" target="_blank">
+                Hostinger: What is HTML?</a>
+                
+                <hr><h3>How HTML Works</h3><hr>
+                <p>HTML uses a system of tags and attributes to structure and present content on the web. Tags are enclosed in angle brackets. Most HTML elements have an opening tag and a closing tag, though some (like images and line breaks) are self-closing.</p>
+                <p>Web browsers read these tags and use them to render content visually. For example, the <code>&lt;h1&gt;</code> tag displays large, bold headings, while the <code>&lt;a&gt;</code> tag creates a hyperlink. Attributes provide extra information about an element, like the source of an image or the destination of a link.</p>
+
+                <hr><h3>Common HTML Tags</h3><hr>
+                <ul>
+                    <li><b>&lt;html&gt;</b>: Defines the HTML document.</li>
+                    <li><b>&lt;head&gt;</b>: Contains metadata such as the title and character set.</li>
+                    <li><b>&lt;title&gt;</b>: Sets the title of the web page (appears in the browser tab).</li>
+                    <li><b>&lt;body&gt;</b>: Contains the content of the webpage.</li>
+                    <li><b>&lt;h1&gt; to &lt;h6&gt;</b>: Headings, with &lt;h1&gt; being the highest.</li>
+                    <li><b>&lt;p&gt;</b>: Defines a paragraph of text.</li>
+                    <li><b>&lt;a&gt;</b>: Creates hyperlinks to other pages.</li>
+                </ul>
+
+                <hr><h3>HTML Attributes</h3><hr>
+                <p>HTML elements can have attributes that provide additional information. For example:</p>
+                <ul>
+                    <li><b>href</b>: Defines the URL of a link.</li>
+                    <li><b>src</b>: Defines the source of an image.</li>
+                    <li><b>alt</b>: Provides alternative text for images.</li>
+                    <li><b>class</b>: Applies CSS styles to elements with a specific class.</li>
+                    <li><b>id</b>: Uniquely identifies an element within the document.</li>
+                </ul>
+
+                <hr><h4>HTML Example Attribute</h4><hr>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax/grumpy-cat-small.png" alt="HTML Example Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
